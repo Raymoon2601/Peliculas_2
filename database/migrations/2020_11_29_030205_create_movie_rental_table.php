@@ -19,7 +19,8 @@ class CreateMovieRentalTable extends Migration
             $table->integer('rental_id')->unsigned();
             $table->decimal('price');
             $table->string('observations');
-            $table->timestamps();   
+            $table->timestamps();
+            $table->engine = 'InnoDB';   
         });
     }
 

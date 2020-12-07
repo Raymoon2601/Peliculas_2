@@ -18,7 +18,8 @@ class CreateCategoryMovieTable extends Migration
             $table->integer('movie_id')->unsigned();
             $table->integer('category_id')->unsigned();
             $table->integer('status_id')->unsigned();
-            $table->timestamps();   
+            $table->timestamps();
+            $table->engine = 'InnoDB';   
         });
     }
 

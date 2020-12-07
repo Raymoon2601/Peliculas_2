@@ -16,6 +16,7 @@ class CreateTypeStatusesTable extends Migration
         Schema::create('type_statuses', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->engine = 'InnoDB';
         });
     }
 

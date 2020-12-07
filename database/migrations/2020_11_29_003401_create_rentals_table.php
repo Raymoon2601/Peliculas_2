@@ -14,12 +14,13 @@ class CreateRentalsTable extends Migration
     public function up()
     {
         Schema::create('rentals', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->date('start_date');
             $table->date('end_date');
             $table->decimal('total');
-            $table->integer('user_id');
-            $table->integer('status_id');
+            $table->integer('user_id')->unsigned();
+            $table->integer('status_id')->unsigned();
+            $table->engine = 'InnoDB';
         });
     }
 

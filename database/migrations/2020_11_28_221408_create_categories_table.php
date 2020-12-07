@@ -16,7 +16,8 @@ class CreateCategoriesTable extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->integer('status_id');
+            $table->integer('status_id')->unsigned();
+            $table->engine = 'InnoDB';
         });
     }
 

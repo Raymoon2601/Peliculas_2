@@ -54,8 +54,8 @@ class CreateRelationships extends Migration
 
         Schema::table('movie_rental',function($table){
 
-            $table->foreign('movie_id')->references('id')->on('movie')->onUpdate('cascade');
-            $table->foreign('rental_id')->references('id')->on('rental')->onUpdate('cascade');
+            $table->foreign('movie_id')->references('id')->on('movies')->onUpdate('cascade');
+            $table->foreign('rental_id')->references('id')->on('rentals')->onUpdate('cascade');
         });
 
         });
