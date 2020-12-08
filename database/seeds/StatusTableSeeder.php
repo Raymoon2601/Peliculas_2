@@ -15,6 +15,7 @@ class StatusTableSeeder extends Seeder
         $statuses = array(
         	['status' => 'Activo'],
         	['status' => 'Inactivo'],
+        	['status' => 'Ausente'],
         );
 
 
