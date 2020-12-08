@@ -14,6 +14,14 @@
                     <label>Descripción</label>
                     <input type="text" name="description" class="form-control" required>
                 </div>
+                <div class="form-group">
+                    <label>Usuario</label>
+                    <input type="text" name="user_id" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Estado</label>
+                    <input type="text" name="status_id" class="form-control" required>
+                </div>
                  <div class="form-group">
                     <button type="submit" class="btn btn-sucess">Enviar</button>
                 </div>

@@ -17,6 +17,8 @@ class MovieController extends Controller
     	$movie = new Movie;
     	$movie->name =$request->name;
     	$movie->description = $request->description;
+        $movie->user_id = $request->user_id;
+        $movie->status_id = $request->status_id;
     	$movie->save();
     	return redirect('movie');
     }
@@ -35,6 +37,8 @@ class MovieController extends Controller
     	$movie =Movie::find($id);
     	$movie->name =$request->name;
     	$movie->description =$request->description;
+        $movie->user_id = $request->user_id;
+        $movie->status_id = $request->status_id;
     	$movie->save();
     	return redirect('movie');
     }
